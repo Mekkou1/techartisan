@@ -19,6 +19,10 @@
             <span class="dropdown-arrow">▼</span>
           </button>
           <div class="dropdown-menu" :class="{ show: servicesDropdownVisible }">
+            <router-link to="/services" @click="hideServicesDropdown" class="dropdown-main-link">
+              🏢 Tous nos services
+            </router-link>
+            <div class="dropdown-divider"></div>
             <router-link to="/services/developpementgen" @click="hideServicesDropdown">
               💻 Développement Web & Mobile
             </router-link>
@@ -31,10 +35,14 @@
             <router-link to="/services/designbranding" @click="hideServicesDropdown">
               🎨 Design & Branding
             </router-link>
+            <router-link to="/services/formation" @click="hideServicesDropdown">
+              🎓 Formations
+            </router-link>
           </div>
         </div>
 
         <router-link to="/products" exact-active-class="active">Nos Produits</router-link>
+        <router-link to="/about" exact-active-class="active">À propos</router-link>
         <router-link to="/contacts" exact-active-class="active">Contact</router-link>
       </nav>
 
@@ -78,6 +86,9 @@
             <span class="toggle-icon" :class="{ rotated: servicesExpanded }">▼</span>
           </button>
           <div class="mobile-submenu" :class="{ open: servicesExpanded }">
+            <router-link to="/services" @click="closeMobileMenu">
+              🏢 Tous nos services
+            </router-link>
             <router-link to="/services/developpementgen" @click="closeMobileMenu">
               💻 Développement Web & Mobile
             </router-link>
@@ -90,12 +101,20 @@
             <router-link to="/services/designbranding" @click="closeMobileMenu">
               🎨 Design & Branding
             </router-link>
+            <router-link to="/services/formation" @click="closeMobileMenu">
+              🎓 Formations
+            </router-link>
           </div>
         </div>
 
         <router-link to="/products" @click="closeMobileMenu" exact-active-class="active">
           <span class="mobile-icon">📦</span>
           <span class="mobile-text">Nos Produits</span>
+        </router-link>
+
+        <router-link to="/about" @click="closeMobileMenu" exact-active-class="active">
+          <span class="mobile-icon">ℹ️</span>
+          <span class="mobile-text">À propos</span>
         </router-link>
 
         <router-link to="/contacts" @click="closeMobileMenu" exact-active-class="active">
@@ -359,6 +378,23 @@ export default {
   background: rgba(66, 185, 131, 0.08);
   color: #42b983;
   transform: translateX(4px);
+}
+
+.dropdown-main-link {
+  font-weight: 600 !important;
+  background: rgba(66, 185, 131, 0.05) !important;
+  border-bottom: 1px solid rgba(66, 185, 131, 0.1) !important;
+}
+
+.dropdown-main-link:hover {
+  background: rgba(66, 185, 131, 0.15) !important;
+  color: #42b983 !important;
+}
+
+.dropdown-divider {
+  height: 1px;
+  background: rgba(0, 0, 0, 0.1);
+  margin: 0.5rem 0;
 }
 
 /* Section droite */

@@ -2,12 +2,27 @@
   <div class="contacts-view">
       <div class="container">
         <div class="content-wrapper">
-          <h1>Contactez-nous</h1>
-          <p class="intro-text">
-            Vous avez un projet ? Une question ? N'hésitez pas à nous contacter.
-            Notre équipe vous répondra dans les plus brefs délais.
-          </p>
-          <MessageForm />
+          <div class="contact-header">
+            <h1>Contactez-nous</h1>
+            <p class="intro-text">
+              Vous avez un projet ? Une question ? N'hésitez pas à nous contacter.
+              Notre équipe vous répondra dans les plus brefs délais.
+            </p>
+          </div>
+
+          <div class="contact-content">
+            <div class="contact-image">
+              <img src="https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=500&h=600&fit=crop&crop=center" alt="Équipe TechArtisan au travail">
+              <div class="image-overlay">
+                <h3>👥 Notre Équipe</h3>
+                <p>Des experts passionnés à votre service</p>
+              </div>
+            </div>
+
+            <div class="contact-form">
+              <MessageForm />
+            </div>
+          </div>
         </div>
 
         <!-- Informations de contact -->
@@ -166,6 +181,138 @@ export default {
   @media (min-width: 1024px) {
     .container {
       padding: 0 3rem;
+    }
+  }
+
+  /* ===== CONTACT HEADER ===== */
+  .contact-header {
+    text-align: center;
+    margin-bottom: 3rem;
+  }
+
+  .contact-header h1 {
+    color: #2c3e50;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    font-weight: 700;
+  }
+
+  .intro-text {
+    color: #666;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  /* ===== CONTACT CONTENT ===== */
+  .contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: start;
+  }
+
+  /* ===== CONTACT IMAGE ===== */
+  .contact-image {
+    position: relative;
+    border-radius: 16px;
+    overflow: hidden;
+    box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+    height: fit-content;
+  }
+
+  .contact-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    display: block;
+  }
+
+  .image-overlay {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(transparent, rgba(0, 0, 0, 0.8));
+    color: white;
+    padding: 2rem 1.5rem 1.5rem;
+    text-align: center;
+  }
+
+  .image-overlay h3 {
+    font-size: 1.4rem;
+    margin-bottom: 0.5rem;
+    font-weight: 600;
+  }
+
+  .image-overlay p {
+    font-size: 1rem;
+    opacity: 0.9;
+    margin: 0;
+  }
+
+  /* ===== CONTACT FORM ===== */
+  .contact-form {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 2rem;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+  }
+
+  /* ===== RESPONSIVE DESIGN ===== */
+  @media (max-width: 1024px) {
+    .contact-content {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+
+    .contact-image {
+      order: 2;
+    }
+
+    .contact-form {
+      order: 1;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .contact-header h1 {
+      font-size: 2rem;
+    }
+
+    .intro-text {
+      font-size: 1.1rem;
+    }
+
+    .contact-content {
+      gap: 1.5rem;
+    }
+
+    .contact-image img {
+      height: 350px;
+    }
+
+    .contact-form {
+      padding: 1.5rem;
+    }
+
+    .image-overlay {
+      padding: 1.5rem 1rem 1rem;
+    }
+
+    .image-overlay h3 {
+      font-size: 1.2rem;
+    }
+  }
+
+  @media (max-width: 480px) {
+    .contact-image img {
+      height: 280px;
+    }
+
+    .contact-form {
+      padding: 1rem;
     }
   }
   </style>

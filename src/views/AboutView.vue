@@ -65,6 +65,52 @@
       </div>
     </section>
 
+    <!-- Vision Section -->
+    <section class="vision-section">
+      <div class="container">
+        <div class="vision-content">
+          <h2>Ma Vision</h2>
+          <div class="vision-text">
+            <p class="vision-intro">
+              <strong>TechArtisan</strong> est bien plus qu'une simple activité freelance. Dans ma vision,
+              TechArtisan évoluera vers une <strong>entreprise formelle et enregistrée</strong> en tant
+              qu'entrepreneur officiel.
+            </p>
+            <div class="vision-goals">
+              <div class="goal-item">
+                <div class="goal-icon">🏢</div>
+                <h3>Structure Formelle</h3>
+                <p>Transformation de TechArtisan en société enregistrée avec tous les aspects légaux et administratifs requis.</p>
+              </div>
+              <div class="goal-item">
+                <div class="goal-icon">📈</div>
+                <h3>Croissance Durable</h3>
+                <p>Développement d'une équipe qualifiée et expansion des services pour répondre à une demande croissante.</p>
+              </div>
+              <div class="goal-item">
+                <div class="goal-icon">🌟</div>
+                <h3>Excellence & Innovation</h3>
+                <p>Maintenir les standards élevés de qualité tout en intégrant les dernières technologies et méthodologies.</p>
+              </div>
+              <div class="goal-item">
+                <div class="goal-icon">🤝</div>
+                <h3>Partenariats Stratégiques</h3>
+                <p>Établir des collaborations durables avec d'autres entreprises et acteurs du secteur technologique.</p>
+              </div>
+            </div>
+            <div class="vision-future">
+              <h3>🔮 L'Avenir de TechArtisan</h3>
+              <p>
+                Cette évolution permettra à TechArtisan de devenir un acteur majeur dans le domaine
+                des solutions technologiques en Côte d'Ivoire, tout en maintenant l'approche
+                personnalisée et la qualité de service qui font notre force.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- Services Section -->
     <section class="services-overview">
       <div class="container">
@@ -74,7 +120,7 @@
         </div>
 
         <div class="services-grid">
-          <div class="service-item featured">
+          <div class="service-item featured web-dev">
             <div class="service-icon">💻</div>
             <h3>Développement Web & Applications</h3>
             <p>Création de sites web vitrines et dynamiques, applications de gestion personnalisées pour bars, restaurants et entreprises.</p>
@@ -84,9 +130,12 @@
               <li>• Solutions pour bars et restaurants</li>
               <li>• Interfaces utilisateur modernes</li>
             </ul>
+            <router-link to="/services/developpementgen" class="service-btn">
+              En savoir plus
+            </router-link>
           </div>
 
-          <div class="service-item">
+          <div class="service-item featured electronics">
             <div class="service-icon">🔧</div>
             <h3>Électronique & Maintenance</h3>
             <p>Réparation et optimisation de matériel informatique et électronique.</p>
@@ -96,9 +145,12 @@
               <li>• Maintenance préventive</li>
               <li>• Support technique</li>
             </ul>
+            <router-link to="/services/maintenancegen" class="service-btn">
+              En savoir plus
+            </router-link>
           </div>
 
-          <div class="service-item">
+          <div class="service-item featured accounting">
             <div class="service-icon">📊</div>
             <h3>Comptabilité & Gestion</h3>
             <p>Services comptables complets et solutions de gestion d'entreprise.</p>
@@ -108,9 +160,12 @@
               <li>• Conseil financier</li>
               <li>• Logiciels métier</li>
             </ul>
+            <router-link to="/services/comptabilitegestion" class="service-btn">
+              En savoir plus
+            </router-link>
           </div>
 
-          <div class="service-item">
+          <div class="service-item featured design">
             <div class="service-icon">🎨</div>
             <h3>Design & Branding</h3>
             <p>Identité visuelle et design graphique pour valoriser votre marque.</p>
@@ -120,6 +175,9 @@
               <li>• Supports marketing</li>
               <li>• Web design</li>
             </ul>
+            <router-link to="/services/designbranding" class="service-btn">
+              En savoir plus
+            </router-link>
           </div>
         </div>
       </div>
@@ -154,7 +212,7 @@
               <div class="timeline-marker"></div>
               <div class="timeline-content">
                 <h3>🍹 Comptable Gérant - TROPIK</h3>
-                <p>Gestion complète d'un bar-restaurant : comptabilité, administration, budget, approvisionnement et relations clients.</p>
+                <p>Gestion complète d'une unité de production : comptabilité, administration, budget, approvisionnement et relations clients.</p>
                 <span class="timeline-date">2016-2019</span>
               </div>
             </div>
@@ -555,12 +613,57 @@ export default {
 .service-item.featured {
   border-left: 4px solid #42b983;
   background: linear-gradient(135deg, #f8f9fa, #ffffff);
+  position: relative;
+  overflow: hidden;
+}
+
+.service-item.featured::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #42b983, #667eea);
+}
+
+.service-item.featured.web-dev::before {
+  background: linear-gradient(90deg, #42b983, #667eea);
+}
+
+.service-item.featured.electronics::before {
+  background: linear-gradient(90deg, #ff6b35, #f7931e);
+}
+
+.service-item.featured.accounting::before {
+  background: linear-gradient(90deg, #667eea, #764ba2);
+}
+
+.service-item.featured.design::before {
+  background: linear-gradient(90deg, #e91e63, #9c27b0);
 }
 
 .service-icon {
   font-size: 3rem;
   margin-bottom: 1rem;
   text-align: center;
+  color: #42b983;
+}
+
+.service-item.web-dev .service-icon {
+  color: #42b983;
+}
+
+.service-item.electronics .service-icon {
+  color: #ff6b35;
+}
+
+.service-item.accounting .service-icon {
+  color: #667eea;
+}
+
+.service-item.design .service-icon {
+  color: #e91e63;
 }
 
 .service-item h3 {
@@ -596,6 +699,80 @@ export default {
   color: #42b983;
   font-weight: bold;
   margin-right: 0.5rem;
+}
+
+.service-btn {
+  display: inline-block;
+  margin-top: 1.5rem;
+  padding: 0.75rem 1.5rem;
+  background: linear-gradient(45deg, #42b983, #667eea);
+  color: white;
+  text-decoration: none;
+  border-radius: 25px;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(66, 185, 131, 0.3);
+}
+
+.service-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(66, 185, 131, 0.4);
+  background: linear-gradient(45deg, #667eea, #42b983);
+}
+
+.service-item.web-dev .service-btn {
+  background: linear-gradient(45deg, #42b983, #667eea);
+  box-shadow: 0 4px 15px rgba(66, 185, 131, 0.3);
+}
+
+.service-item.web-dev .service-btn:hover {
+  box-shadow: 0 6px 20px rgba(66, 185, 131, 0.4);
+}
+
+.service-item.electronics .service-btn {
+  background: linear-gradient(45deg, #ff6b35, #f7931e);
+  box-shadow: 0 4px 15px rgba(255, 107, 53, 0.3);
+}
+
+.service-item.electronics .service-btn:hover {
+  box-shadow: 0 6px 20px rgba(255, 107, 53, 0.4);
+}
+
+.service-item.accounting .service-btn {
+  background: linear-gradient(45deg, #667eea, #764ba2);
+  box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
+}
+
+.service-item.accounting .service-btn:hover {
+  box-shadow: 0 6px 20px rgba(102, 126, 234, 0.4);
+}
+
+.service-item.design .service-btn {
+  background: linear-gradient(45deg, #e91e63, #9c27b0);
+  box-shadow: 0 4px 15px rgba(233, 30, 99, 0.3);
+}
+
+.service-item.design .service-btn:hover {
+  box-shadow: 0 6px 20px rgba(233, 30, 99, 0.4);
+}
+
+.service-item.web-dev li:before {
+  color: #42b983;
+}
+
+.service-item.electronics li:before {
+  color: #ff6b35;
+}
+
+.service-item.accounting li:before {
+  color: #667eea;
+}
+
+.service-item.design li:before {
+  color: #e91e63;
 }
 
 /* ===== JOURNEY SECTION ===== */
@@ -965,6 +1142,169 @@ export default {
   .badge {
     padding: 0.4rem 0.8rem;
     font-size: 0.8rem;
+  }
+}
+
+/* ===== VISION SECTION ===== */
+.vision-section {
+  padding: 5rem 0;
+  background: linear-gradient(135deg, #f8f9fa 0%, #ffffff 50%, #f8f9fa 100%);
+}
+
+.vision-content {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.vision-content h2 {
+  font-size: 2.5rem;
+  color: #2c3e50;
+  text-align: center;
+  margin-bottom: 2rem;
+  font-weight: 700;
+  position: relative;
+}
+
+.vision-content h2::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 4px;
+  background: linear-gradient(90deg, #42b983, #667eea);
+  border-radius: 2px;
+}
+
+.vision-intro {
+  font-size: 1.3rem;
+  line-height: 1.7;
+  text-align: center;
+  margin-bottom: 3rem;
+  color: #34495e;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.vision-goals {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+  margin-bottom: 4rem;
+}
+
+.goal-item {
+  background: white;
+  padding: 2.5rem 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.goal-item::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #42b983, #667eea);
+}
+
+.goal-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.goal-icon {
+  font-size: 3rem;
+  margin-bottom: 1.5rem;
+  display: block;
+}
+
+.goal-item h3 {
+  font-size: 1.4rem;
+  color: #2c3e50;
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.goal-item p {
+  color: #666;
+  line-height: 1.6;
+  font-size: 0.95rem;
+}
+
+.vision-future {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 3rem 2rem;
+  border-radius: 16px;
+  text-align: center;
+  box-shadow: 0 12px 30px rgba(102, 126, 234, 0.3);
+}
+
+.vision-future h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  font-weight: 700;
+}
+
+.vision-future p {
+  font-size: 1.1rem;
+  line-height: 1.7;
+  opacity: 0.95;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+/* ===== RESPONSIVE VISION ===== */
+@media (max-width: 768px) {
+  .vision-section {
+    padding: 3rem 0;
+  }
+
+  .vision-content h2 {
+    font-size: 2rem;
+  }
+
+  .vision-intro {
+    font-size: 1.1rem;
+  }
+
+  .vision-goals {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .goal-item {
+    padding: 2rem 1.5rem;
+  }
+
+  .goal-icon {
+    font-size: 2.5rem;
+  }
+
+  .goal-item h3 {
+    font-size: 1.2rem;
+  }
+
+  .vision-future {
+    padding: 2rem 1.5rem;
+  }
+
+  .vision-future h3 {
+    font-size: 1.5rem;
+  }
+
+  .vision-future p {
+    font-size: 1rem;
   }
 }
 </style>

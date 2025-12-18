@@ -43,6 +43,42 @@
         </div>
       </section>
 
+      <!-- Promotion de Noël -->
+      <section class="christmas-promo">
+        <div class="container">
+          <div class="promo-content">
+            <div class="promo-text">
+              <h2>🎄 Offre Spéciale Fêtes de Fin d'Année !</h2>
+              <p class="promo-subtitle">Profitez de notre offre exceptionnelle pour célébrer Noël et le Nouvel An</p>
+              <div class="promo-discount">
+                <span class="discount-badge">-20%</span>
+                <span class="discount-text">de réduction sur tous vos devis</span>
+              </div>
+              <p class="promo-description">
+                Offre valable jusqu'au 31 décembre 2024 pour tous les nouveaux projets.
+                Donnez-vous les moyens de vos ambitions pour cette nouvelle année !
+              </p>
+              <div class="promo-actions">
+                <router-link to="/devis" class="btn-christmas">
+                  Obtenir mon devis -20%
+                </router-link>
+                <router-link to="/contacts" class="btn-christmas-outline">
+                  En savoir plus
+                </router-link>
+              </div>
+            </div>
+            <div class="promo-visual">
+              <div class="christmas-tree">
+                🎄
+              </div>
+              <div class="snowflakes">
+                ❄️ ❄️ ❄️
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <!-- Services Principaux -->
       <section class="services-preview">
         <div class="container">
@@ -106,8 +142,8 @@
                   <li>✓ Conseil Technique</li>
                   <li>✓ Support Pédagogique</li>
                 </ul>
-                <router-link to="/services" class="btn-secondary">
-                  Voir formations
+                <router-link to="/services/formation" class="btn-primary">
+                  En savoir plus
                 </router-link>
               </div>
             </div>
@@ -126,7 +162,7 @@
                   <li>✓ Conseil Financier</li>
                   <li>✓ Audit Comptable</li>
                 </ul>
-                <router-link to="/services/comptabilitegestion" class="btn-secondary">
+                <router-link to="/services/comptabilitegestion" class="btn-primary">
                   En savoir plus
                 </router-link>
               </div>
@@ -608,6 +644,228 @@ export default {
   .cta-buttons {
     flex-direction: column;
     align-items: center;
+  }
+}
+
+/* ===== CHRISTMAS PROMOTION ===== */
+.christmas-promo {
+  background: linear-gradient(135deg, #d32f2f 0%, #1976d2 50%, #388e3c 100%);
+  color: white;
+  padding: 4rem 0;
+  position: relative;
+  overflow: hidden;
+}
+
+.christmas-promo::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="snow" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse"><circle cx="10" cy="10" r="1" fill="rgba(255,255,255,0.3)"/></pattern></defs><rect width="100" height="100" fill="url(%23snow)"/></svg>');
+  opacity: 0.1;
+}
+
+.promo-content {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 3rem;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+}
+
+.promo-text h2 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin-bottom: 1rem;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #fff, #ffebee);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.promo-subtitle {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  opacity: 0.9;
+  font-weight: 500;
+}
+
+.promo-discount {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.discount-badge {
+  background: linear-gradient(45deg, #ffeb3b, #ffc107);
+  color: #d32f2f;
+  padding: 0.75rem 1.5rem;
+  border-radius: 50px;
+  font-size: 1.5rem;
+  font-weight: 900;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  animation: pulse 2s infinite;
+}
+
+.discount-text {
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.promo-description {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  margin-bottom: 2.5rem;
+  opacity: 0.95;
+}
+
+.promo-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.btn-christmas {
+  background: linear-gradient(45deg, #ffeb3b, #ffc107);
+  color: #d32f2f;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+  border: 3px solid transparent;
+}
+
+.btn-christmas:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+  background: linear-gradient(45deg, #ffc107, #ffeb3b);
+}
+
+.btn-christmas-outline {
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 50px;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  border: 3px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  transition: all 0.3s ease;
+}
+
+.btn-christmas-outline:hover {
+  background: rgba(255, 255, 255, 0.2);
+  border-color: rgba(255, 255, 255, 0.6);
+  transform: translateY(-2px);
+}
+
+.promo-visual {
+  text-align: center;
+  position: relative;
+}
+
+.christmas-tree {
+  font-size: 8rem;
+  animation: bounce 3s infinite;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.snowflakes {
+  font-size: 2rem;
+  margin-top: 1rem;
+  animation: float 4s ease-in-out infinite;
+  opacity: 0.8;
+}
+
+@keyframes pulse {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.05); }
+}
+
+@keyframes bounce {
+  0%, 20%, 53%, 80%, 100% { transform: translate3d(0, 0, 0); }
+  40%, 43% { transform: translate3d(0, -30px, 0); }
+  70% { transform: translate3d(0, -15px, 0); }
+  90% { transform: translate3d(0, -4px, 0); }
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0px); }
+  50% { transform: translateY(-10px); }
+}
+
+/* ===== RESPONSIVE CHRISTMAS PROMO ===== */
+@media (max-width: 1024px) {
+  .promo-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    text-align: center;
+  }
+
+  .promo-text h2 {
+    font-size: 2rem;
+  }
+
+  .christmas-tree {
+    font-size: 6rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .christmas-promo {
+    padding: 3rem 0;
+  }
+
+  .promo-text h2 {
+    font-size: 1.8rem;
+  }
+
+  .promo-subtitle {
+    font-size: 1.1rem;
+  }
+
+  .discount-badge {
+    font-size: 1.3rem;
+    padding: 0.6rem 1.2rem;
+  }
+
+  .promo-description {
+    font-size: 1rem;
+  }
+
+  .promo-actions {
+    justify-content: center;
+  }
+
+  .btn-christmas,
+  .btn-christmas-outline {
+    padding: 0.875rem 1.5rem;
+    font-size: 1rem;
+  }
+
+  .christmas-tree {
+    font-size: 4rem;
+  }
+
+  .snowflakes {
+    font-size: 1.5rem;
   }
 }
 

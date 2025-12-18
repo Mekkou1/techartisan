@@ -6,7 +6,7 @@
       <section class="services">
   <h2>Nos cartes</h2>
   <div class="produit">
-    <img src="https://via.placeholder.com/150" alt="système de sécurité">
+    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop&crop=center" alt="Systèmes de Sécurité CCTV">
     <div class="produit-content">
       <h3>Installation et Maintenance des Systèmes de Sécurité </h3>
       <ul>
@@ -22,7 +22,7 @@
     </div>
   </div>
   <div class="produit">
-    <img src="https://via.placeholder.com/150" alt="Maintenance et reparations">
+    <img src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158?w=400&h=250&fit=crop&crop=center" alt="Maintenance Informatique">
     <div class="produit-content">
       <h3>Maintenance Informatique et Réparation de Matériel </h3>
       <ul>
@@ -40,7 +40,7 @@
     </div>
   </div>
   <div class="produit">
-    <img src="https://via.placeholder.com/150" alt="Reseaux et Infrastructure">
+    <img src="https://images.unsplash.com/photo-1558494949-ef010cbdcc31?w=400&h=250&fit=crop&crop=center" alt="Infrastructure Réseaux IT">
     <div class="produit-content">
       <h3>Réseaux et Infrastructures IT </h3>
       <ul>
@@ -54,7 +54,7 @@
     </div>
   </div>
   <div class="produit">
-    <img src="https://via.placeholder.com/150" alt="Automatisation">
+    <img src="https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=400&h=250&fit=crop&crop=center" alt="Automatisation et Domotique">
     <div class="produit-content">
       <h3>Automatisation et Domotique </h3>
       <ul>

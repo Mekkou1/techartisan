@@ -6,7 +6,7 @@
     <section class="services">
   <h2>Nos cartes</h2>
   <div class="produit">
-    <img src="https://via.placeholder.com/150" alt="Communication visuelle">
+    <img src="https://images.unsplash.com/photo-1561070791-2526d30994b5?w=400&h=250&fit=crop&crop=center" alt="Communication Visuelle">
     <div class="produit-content">
       <h3>Communication Visuelle  </h3>
       <ul>
@@ -16,7 +16,7 @@
     </div>
   </div>
   <div class="produit">
-    <img src="https://via.placeholder.com/150" alt="Identité Visuelle">
+    <img src="https://images.unsplash.com/photo-1634942537034-2531766767d1?w=400&h=250&fit=crop&crop=center" alt="Identité Visuelle et Logo">
     <div class="produit-content">
       <h3>Identité Visuelle </h3>
       <ul>
@@ -30,7 +30,7 @@
     </div>
   </div>
   <div class="produit">
-    <img src="https://via.placeholder.com/150" alt="Gestion SEO">
+    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&crop=center" alt="Optimisation SEO">
     <div class="produit-content">
       <h3>Gestion SEO </h3>
       <ul>
@@ -41,7 +41,7 @@
     </div>
   </div>
   <div class="produit">
-    <img src="https://via.placeholder.com/150" alt="Strategie Branding">
+    <img src="https://images.unsplash.com/photo-1552664730-d307ca884978?w=400&h=250&fit=crop&crop=center" alt="Stratégie de Branding">
     <div class="produit-content">
       <h3>Strategie de Branding </h3>
       <ul>

@@ -63,7 +63,7 @@
                 </div>
                 <p>Apps iOS/Android natives et hybrides sur mesure</p>
                 <router-link to="/services/developpementgen" class="btn-primary">
-                  Découvrir
+                  En savoir plus
                 </router-link>
               </div>
 
@@ -73,8 +73,8 @@
                   <h4>Cloud & Infrastructure</h4>
                 </div>
                 <p>Solutions cloud, migration, optimisation infrastructure</p>
-                <router-link to="/products" class="btn-secondary">
-                  Voir offres
+                <router-link to="/products" class="btn-primary">
+                  En savoir plus
                 </router-link>
               </div>
 
@@ -84,8 +84,8 @@
                   <h4>Cybersécurité</h4>
                 </div>
                 <p>Protection des données, audit sécurité, formation</p>
-                <router-link to="/contacts" class="btn-secondary">
-                  Contacter
+                <router-link to="/contacts" class="btn-primary">
+                  En savoir plus
                 </router-link>
               </div>
             </div>
@@ -128,8 +128,8 @@
                   <h4>Installation Systèmes</h4>
                 </div>
                 <p>Montage et configuration d'équipements informatiques</p>
-                <router-link to="/products" class="btn-secondary">
-                  Voir matériel
+                <router-link to="/products" class="btn-primary">
+                  En savoir plus
                 </router-link>
               </div>
 
@@ -139,8 +139,8 @@
                   <h4>Dépannage d'Urgence</h4>
                 </div>
                 <p>Intervention rapide 24/7 pour vos urgences techniques</p>
-                <router-link to="/contacts" class="btn-secondary">
-                  Appel d'urgence
+                <router-link to="/contacts" class="btn-primary">
+                  En savoir plus
                 </router-link>
               </div>
             </div>
@@ -157,21 +157,21 @@
               <div class="service-card">
                 <div class="card-header">
                   <div class="card-icon">💻</div>
-                  <h4>Informatique de Base</h4>
+                  <h4>Bureautique & Pack Office</h4>
                 </div>
-                <p>Inititation à l'informatique, bureautique, internet</p>
-                <router-link to="/contacts" class="btn-secondary">
-                  S'inscrire
+                <p>Maîtrise complète de Word, Excel, PowerPoint et autres outils bureautiques professionnels</p>
+                <router-link to="/services/formation" class="btn-primary">
+                  En savoir plus
                 </router-link>
               </div>
 
               <div class="service-card">
                 <div class="card-header">
                   <div class="card-icon">📊</div>
-                  <h4>Digital Business</h4>
+                  <h4>Logiciels Comptables</h4>
                 </div>
-                <p>Transformation digitale, outils collaboratifs, gestion de projet</p>
-                <router-link to="/contacts" class="btn-secondary">
+                <p>Formation spécialisée sur les logiciels de comptabilité : caisse, immobilisation, système e-impôt</p>
+                <router-link to="/services/formation" class="btn-primary">
                   En savoir plus
                 </router-link>
               </div>
@@ -182,8 +182,8 @@
                   <h4>Cybersécurité</h4>
                 </div>
                 <p>Sensibilisation sécurité, bonnes pratiques, protection données</p>
-                <router-link to="/contacts" class="btn-secondary">
-                  Formation sécurité
+                <router-link to="/services/formation" class="btn-primary">
+                  En savoir plus
                 </router-link>
               </div>
 
@@ -193,8 +193,8 @@
                   <h4>Accompagnement</h4>
                 </div>
                 <p>Conseil personnalisé, audit, stratégie digitale</p>
-                <router-link to="/contacts" class="btn-secondary">
-                  Consultation
+                <router-link to="/contacts" class="btn-primary">
+                  En savoir plus
                 </router-link>
               </div>
             </div>
@@ -214,8 +214,8 @@
                   <h4>Comptabilité Générale</h4>
                 </div>
                 <p>Tenue comptable, bilan, compte de résultat</p>
-                <router-link to="/services/comptabilitegestion" class="btn-secondary">
-                  Services comptables
+                <router-link to="/services/comptabilitegestion" class="btn-primary">
+                  En savoir plus
                 </router-link>
               </div>
 
@@ -225,8 +225,8 @@
                   <h4>Gestion Fiscale</h4>
                 </div>
                 <p>Déclarations fiscales, optimisation, conseils fiscaux</p>
-                <router-link to="/services/comptabilitegestion" class="btn-secondary">
-                  Conseil fiscal
+                <router-link to="/services/comptabilitegestion" class="btn-primary">
+                  En savoir plus
                 </router-link>
               </div>
 
@@ -236,8 +236,8 @@
                   <h4>Audit Comptable</h4>
                 </div>
                 <p>Révision comptes, contrôles, certification</p>
-                <router-link to="/services/comptabilitegestion" class="btn-secondary">
-                  Audit
+                <router-link to="/services/comptabilitegestion" class="btn-primary">
+                  En savoir plus
                 </router-link>
               </div>
 
@@ -247,8 +247,8 @@
                   <h4>Design & Branding</h4>
                 </div>
                 <p>Identité visuelle, cartes de visite, supports marketing</p>
-                <router-link to="/services/designbranding" class="btn-secondary">
-                  Création graphique
+                <router-link to="/services/designbranding" class="btn-primary">
+                  En savoir plus
                 </router-link>
               </div>
             </div>
@@ -457,7 +457,7 @@ export default {
 
 .service-badge {
   position: absolute;
-  top: -15px;
+  top: -35px;
   left: 50%;
   transform: translateX(-50%);
   background: #42b983;

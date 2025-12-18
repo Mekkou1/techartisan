@@ -6,7 +6,7 @@
       <section class="services">
   <h2>Nos cartes</h2>
   <div class="produit">
-    <img src="https://via.placeholder.com/150" alt="Vitrine">
+    <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?w=400&h=250&fit=crop&crop=center" alt="Site Web Vitrine Moderne">
     <div class="produit-content">
       <h3>Conception de sites web vitrines </h3>
       <ul>
@@ -17,7 +17,7 @@
     </div>
   </div>
   <div class="produit">
-    <img src="https://via.placeholder.com/150" alt="E-commerce">
+    <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=400&h=250&fit=crop&crop=center" alt="Boutique E-commerce">
     <div class="produit-content">
       <h3>Développement de sites e-commerce </h3>
       <ul>
@@ -28,7 +28,7 @@
     </div>
   </div>
   <div class="produit">
-    <img src="https://via.placeholder.com/150" alt="Web application">
+    <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=400&h=250&fit=crop&crop=center" alt="Application Web Dashboard">
     <div class="produit-content">
       <h3>Développement de web applications </h3>
       <ul>
@@ -39,7 +39,7 @@
     </div>
   </div>
   <div class="produit">
-    <img src="https://via.placeholder.com/150" alt="Applications mobile">
+    <img src="https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?w=400&h=250&fit=crop&crop=center" alt="Applications Mobiles">
     <div class="produit-content">
       <h3>Développement d'applications Mobiles </h3>
       <ul>
