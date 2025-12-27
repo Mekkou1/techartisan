@@ -763,6 +763,12 @@ export default {
     grid-template-columns: 1fr;
   }
 
+  .service-badge {
+    top: -35px;
+    font-size: 0.7rem;
+    padding: 0.4rem 0.8rem;
+  }
+
   .service-card {
     padding: 1.25rem;
   }

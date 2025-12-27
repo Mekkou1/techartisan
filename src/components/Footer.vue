@@ -56,7 +56,7 @@
           <div class="contact-info">
             <div class="contact-item">
               <span class="contact-icon">📧</span>
-              <span>contact@techartisan.com</span>
+              <span>direction.techartisan@gmail.com</span>
             </div>
             <div class="contact-item">
               <span class="contact-icon">📱</span>

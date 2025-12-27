@@ -430,19 +430,51 @@ export default {
 }
 
 /* Responsive Design */
-@media (max-width: 1024px) {
+/* ===== TABLETTES (769px - 1024px) ===== */
+@media (min-width: 769px) and (max-width: 1024px) {
   .header-nav {
-    gap: 1.5rem;
+    gap: 1.25rem;
   }
 
   .dropdown-menu {
-    min-width: 250px;
+    min-width: 280px;
+    max-width: 90vw;
+  }
+
+  .dropdown-menu a {
+    padding: 1rem 1.25rem;
+    font-size: 1rem;
+    min-height: 48px; /* Accessibilité tactile */
+    display: flex;
+    align-items: center;
   }
 
   .header-nav a,
   .dropdown-trigger {
-    padding: 0.625rem 0.875rem;
-    font-size: 0.9rem;
+    padding: 0.75rem 1rem;
+    font-size: 0.95rem;
+    min-height: 48px; /* Accessibilité tactile */
+  }
+
+  .dropdown-arrow {
+    margin-left: 0.5rem;
+  }
+}
+
+/* ===== DESKTOP LARGE (1025px+) ===== */
+@media (min-width: 1025px) {
+  .header-nav {
+    gap: 2rem;
+  }
+
+  .dropdown-menu {
+    min-width: 300px;
+  }
+
+  .header-nav a,
+  .dropdown-trigger {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
   }
 }
 
