@@ -55,7 +55,7 @@
                 <span class="discount-text">de réduction sur tous vos devis</span>
               </div>
               <p class="promo-description">
-                Offre valable jusqu'au 31 décembre 2024 pour tous les nouveaux projets.
+                Offre valable jusqu'au 31 Janvier 2026 pour tous les nouveaux projets.
                 Donnez-vous les moyens de vos ambitions pour cette nouvelle année !
               </p>
               <div class="promo-actions">

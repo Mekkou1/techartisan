@@ -10,6 +10,7 @@ import ComptabiliteGestionView from '../views/ComptabiliteGestionView.vue'
 import DesignBrandingView from '../views/DesignBrandingView.vue'
 import MaintenanceGenView from '../views/MaintenanceGenView.vue'
 import FormationView from '../views/FormationView.vue'
+import PromoFacebook from '../views/PromoFacebook.vue'
 
 
 const routes = [
@@ -74,6 +75,11 @@ const routes = [
     path:'/services/formation',
     name:'formation',
     component: FormationView
+  },
+  {
+    path:'/promo-facebook',
+    name:'promo-facebook',
+    component: PromoFacebook
   },
 ];
 
