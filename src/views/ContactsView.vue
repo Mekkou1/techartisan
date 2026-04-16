@@ -31,7 +31,7 @@
           <div class="info-grid">
             <div class="info-item">
               <h3>📧 Email</h3>
-              <p>contact@techartisan.com</p>
+              <p>direction.techartisan@gmail.com</p>
             </div>
             <div class="info-item">
               <h3>📱 Téléphone</h3>
