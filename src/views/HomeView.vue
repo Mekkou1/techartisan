@@ -67,7 +67,7 @@
                 <div class="feature-pill">🏪 Multi-Boutiques</div>
               </div>
               <div class="stockpro-actions">
-                <router-link to="/products" class="btn-stockpro-primary">
+                <router-link to="/stockproci" class="btn-stockpro-primary">
                   Découvrir StockPro CI
                 </router-link>
                 <router-link to="/contacts" class="btn-stockpro-outline">

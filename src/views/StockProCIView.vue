@@ -11,19 +11,19 @@
           <div class="sp-badge">NOUVEAU PRODUIT</div>
           <h1 class="sp-title">
             Simplifiez la Gestion de<br/>
-            Votre Boutique avec <span class="sp-highlight">StockPro CI</span>
+            Votre Commerce avec <span class="sp-highlight">StockPro CI</span>
           </h1>
           <p class="sp-subtitle">
-            Marre de vous perdre dans vos stocks et vos dettes clients ?
-            Découvrez la solution qui simplifie tout et envoie vos reçus directement sur WhatsApp !
+            Gérez vos stocks, vos ventes et suivez vos dettes clients sans effort.
+            La solution tout-en-un avec envoi de reçus WhatsApp et scanner QR.
           </p>
           <div class="sp-actions">
             <a href="https://stockproci.techartisanci.online/" target="_blank" rel="noopener noreferrer" class="btn-sp-primary">
               Tester Gratuitement
             </a>
-            <a href="#features" class="btn-sp-secondary">
+            <button @click="scrollToFeatures" class="btn-sp-secondary">
               Découvrir les fonctionnalités
-            </a>
+            </button>
           </div>
           <div class="sp-platforms">
             <span>Disponible sur: </span>
@@ -43,33 +43,57 @@
     <section id="features" class="sp-features">
       <div class="container">
         <div class="section-header">
-          <h2>Pourquoi nos clients l'adorent ✨</h2>
-          <p>Des outils puissants conçus pour faciliter votre quotidien et développer votre chiffre d'affaires.</p>
+          <h2>Pourquoi les commerçants l'adorent ✨</h2>
+          <p>Des outils puissants conçus pour faciliter votre quotidien, sécuriser votre caisse et développer votre chiffre d'affaires.</p>
         </div>
         
         <div class="features-grid">
           <div class="feature-card">
+            <div class="feature-icon bg-multi">🏪</div>
+            <h3>Multi-Boutiques centralisé</h3>
+            <p>Gérez plusieurs points de vente simultanément sous une même entreprise. Contrôlez vos stocks et basculez d'une boutique à l'autre en un clic.</p>
+          </div>
+
+          <div class="feature-card">
             <div class="feature-icon bg-scan">📷</div>
-            <h3>Scanner QR Intégré</h3>
-            <p>Identifiez vos produits en 1 seconde. Scanner intégré à la caméra de votre smartphone ou tablette pour une vente ultra-rapide.</p>
+            <h3>Caisse & Scan Code-barres</h3>
+            <p>Vendez en 1 seconde ! Scanner intégré à la caméra de votre smartphone ou recherche rapide. Optimisé pour gagner du temps en caisse.</p>
           </div>
           
           <div class="feature-card">
             <div class="feature-icon bg-wa">✉️</div>
-            <h3>Reçus WhatsApp</h3>
-            <p>Fini le papier ! Envoyez instantanément des reçus professionnels à vos clients directement sur leur numéro WhatsApp.</p>
+            <h3>Reçus WhatsApp & Thermiques</h3>
+            <p>Envoyez instantanément des reçus professionnels (PDF) via WhatsApp, ou imprimez des tickets de caisse sur vos imprimantes thermiques.</p>
           </div>
           
           <div class="feature-card">
             <div class="feature-icon bg-alert">🚨</div>
-            <h3>Alertes Intelligentes</h3>
-            <p>Anticipez vos pertes grâce aux alertes automatiques pour les produits en rupture de stock imminent ou proches de la date de péremption.</p>
+            <h3>Alertes Stocks & Péremptions</h3>
+            <p>Ne soyez plus en rupture ! Recevez des alertes automatiques lorsque vos produits atteignent le seuil critique ou la date de péremption.</p>
           </div>
-          
+
           <div class="feature-card">
-            <div class="feature-icon bg-multi">🏪</div>
-            <h3>Multi-Boutiques</h3>
-            <p>Gérez plusieurs points de vente simultanément. Contrôlez les stocks et le personnel de toutes vos boutiques de n'importe où.</p>
+            <div class="feature-icon bg-debt">💳</div>
+            <h3>Suivi des Dettes Clients/Fournisseurs</h3>
+            <p>Un client ne paie qu'une partie ? Le système enregistre instantanément le reste à payer. Vue centralisée et historique complet pour recouvrer vos créances.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon bg-cash">📉</div>
+            <h3>Trésorerie & Bénéfice Réel</h3>
+            <p>Saisissez vos charges (Loyer, CIE/SODECI, Salaires) et le système calculera automatiquement votre vrai bénéfice net sur le tableau de bord.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon bg-mobile">📱</div>
+            <h3>100% Mobile & Mode Application</h3>
+            <p>Zéro défilement horizontal ! Interface pensée pour le mobile, installable nativement directement sur votre écran d'accueil (PWA).</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon bg-security">🔐</div>
+            <h3>Comptes Multi-Utilisateurs</h3>
+            <p>Séparation stricte entre le propriétaire (vision globale et suivi CA) et les gérants (peuvent faire les ventes mais ne voient pas le CA total).</p>
           </div>
         </div>
       </div>
@@ -82,21 +106,21 @@
           <div class="value-text">
             <h2>Digitalisez votre boutique dès aujourd'hui 🚀</h2>
             <p>
-              Ventes, Stocks, Clients et Fournisseurs réunis dans une seule application réactive.
+              Ventes, Stocks, Clients et Fournisseurs réunis dans une seule application réactive et ultra-rapide.
               Ne laissez plus les outils archaïques freiner la croissance de votre commerce.
             </p>
             <ul class="value-list">
-              <li>✓ Suivi précis des dettes et créances</li>
-              <li>✓ Gestion avancée des fournisseurs</li>
-              <li>✓ Rapports détaillés sur vos ventes</li>
+              <li>✓ Tableau de bord temps réel (CA, Bénéfices, Valeur du stock)</li>
+              <li>✓ Marque blanche : Votre logo et couleurs sur vos tickets</li>
               <li>✓ Entièrement sécurisé et sauvegardé dans le cloud</li>
+              <li>✓ Exports PDF & Excel en un clic</li>
             </ul>
           </div>
           <div class="value-action-box">
             <h3>Prêt à faire passer votre commerce au niveau supérieur ?</h3>
-            <p>Rejoignez les nombreux commerçants qui ont déjà adopté StockPro CI pour révolutionner leur gestion.</p>
+            <p>Rejoignez les nombreux commerçants qui ont déjà adopté StockPro CI pour révolutionner leur gestion quotidienne.</p>
             <a href="https://stockproci.techartisanci.online/" target="_blank" rel="noopener noreferrer" class="btn-sp-large">
-              Commencer l'installation
+              Créer Mon Compte (Essai Gratuit)
             </a>
           </div>
         </div>
@@ -107,7 +131,15 @@
 
 <script>
 export default {
-  name: 'StockProCIView'
+  name: 'StockProCIView',
+  methods: {
+    scrollToFeatures() {
+      const el = document.getElementById('features');
+      if (el) {
+        el.scrollIntoView({ behavior: 'smooth' });
+      }
+    }
+  }
 };
 </script>
 
@@ -214,6 +246,8 @@ export default {
   font-size: 1.1rem;
   box-shadow: 0 4px 14px rgba(66, 185, 131, 0.4);
   transition: all 0.3s ease;
+  cursor: pointer;
+  border: none;
 }
 
 .btn-sp-primary:hover {
@@ -231,6 +265,7 @@ export default {
   font-size: 1.1rem;
   border: 1px solid #e2e8f0;
   transition: all 0.3s ease;
+  cursor: pointer;
 }
 
 .btn-sp-secondary:hover {
@@ -302,7 +337,7 @@ export default {
 
 .features-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 2rem;
 }
 
@@ -313,6 +348,8 @@ export default {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
   border: 1px solid #edf2f7;
+  display: flex;
+  flex-direction: column;
 }
 
 .feature-card:hover {
@@ -331,13 +368,17 @@ export default {
   margin-bottom: 1.5rem;
 }
 
+.bg-multi { background: rgba(107, 70, 193, 0.1); color: #6b46c1; }
 .bg-scan { background: rgba(56, 161, 105, 0.1); color: #38a169; }
 .bg-wa { background: rgba(37, 211, 102, 0.1); color: #25d366; }
 .bg-alert { background: rgba(229, 62, 62, 0.1); color: #e53e3e; }
-.bg-multi { background: rgba(49, 130, 206, 0.1); color: #3182ce; }
+.bg-debt { background: rgba(221, 107, 32, 0.1); color: #dd6b20; }
+.bg-cash { background: rgba(13, 148, 136, 0.1); color: #0d9488; }
+.bg-mobile { background: rgba(49, 130, 206, 0.1); color: #3182ce; }
+.bg-security { background: rgba(74, 85, 104, 0.1); color: #4a5568; }
 
 .feature-card h3 {
-  font-size: 1.3rem;
+  font-size: 1.25rem;
   color: #2d3748;
   margin-bottom: 1rem;
   font-weight: 700;
@@ -347,6 +388,7 @@ export default {
   color: #718096;
   line-height: 1.6;
   font-size: 0.95rem;
+  flex-grow: 1;
 }
 
 /* --- Value Proposition --- */
@@ -426,6 +468,7 @@ export default {
   box-shadow: 0 4px 14px rgba(66, 185, 131, 0.4);
   transition: all 0.3s ease;
   width: 100%;
+  box-sizing: border-box;
 }
 
 .btn-sp-large:hover {
@@ -475,6 +518,16 @@ export default {
   
   .section-header h2 {
     font-size: 2rem;
+  }
+  
+  .sp-actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  
+  .sp-actions a, .sp-actions button {
+    width: 100%;
+    margin-bottom: 0.5rem;
   }
 }
 </style>
