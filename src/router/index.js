@@ -11,6 +11,7 @@ import DesignBrandingView from '../views/DesignBrandingView.vue'
 import MaintenanceGenView from '../views/MaintenanceGenView.vue'
 import FormationView from '../views/FormationView.vue'
 import PromoFacebook from '../views/PromoFacebook.vue'
+import StockProCIView from '../views/StockProCIView.vue'
 
 
 const routes = [
@@ -80,6 +81,11 @@ const routes = [
     path:'/promo-facebook',
     name:'promo-facebook',
     component: PromoFacebook
+  },
+  {
+    path:'/stockproci',
+    name:'stockproci',
+    component: StockProCIView
   },
 ];
 

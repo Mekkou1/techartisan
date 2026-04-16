@@ -67,7 +67,7 @@
               <div class="product-icon">📱</div>
               <h3>Applications Mobiles</h3>
               <p>Applications iOS et Android sur mesure pour vos besoins spécifiques, avec design moderne et fonctionnalités avancées.</p>
-              <button class="btn-primary">En savoir plus</button>
+              <router-link to="/stockproci" class="btn-primary" style="display: block; text-decoration: none;">En savoir plus</router-link>
             </div>
 
             <div class="product-card">
