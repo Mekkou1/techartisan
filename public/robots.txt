@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://www.techartisanci.online/sitemap.xml
+Sitemap: https://techartisanci.online/sitemap.xml
