@@ -1,5 +1,5 @@
 <template>
-  <div class="products-view">
+  <main class="products-view">
       <!-- Hero Products -->
       <section class="products-hero">
         <div class="hero-overlay"></div>
@@ -142,7 +142,7 @@
           </div>
         </section>
       </div>
-  </div>
+  </main>
 </template>
 
 <script>

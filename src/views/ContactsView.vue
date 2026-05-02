@@ -1,5 +1,5 @@
 <template>
-  <div class="contacts-view">
+  <main class="contacts-view">
       <div class="container">
         <div class="content-wrapper">
           <div class="contact-header">
@@ -48,7 +48,7 @@
           </div>
         </div>
       </div>
-  </div>
+  </main>
 </template>
 
 <script>

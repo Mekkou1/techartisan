@@ -1,5 +1,5 @@
 <template>
-  <div class="home">
+  <main class="home">
       <!-- Hero Section -->
       <section class="hero-section">
         <div class="hero-overlay"></div>
@@ -80,7 +80,7 @@
                 <div class="mockup-phone">
                   <div class="phone-screen">
                     <div class="phone-header">
-                      <img src="/logo.png" alt="SP" class="phone-logo" />
+                      <img src="/logo.png" alt="Logo StockPro CI" class="phone-logo" />
                       <span>StockPro CI</span>
                     </div>
                     <div class="phone-stat-row">
@@ -257,7 +257,7 @@
           </div>
         </div>
       </section>
-  </div>
+  </main>
 </template>
 
 <script>
