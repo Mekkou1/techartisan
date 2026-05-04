@@ -165,6 +165,17 @@ router.beforeEach((to, from, next) => {
   const ogDescription = document.querySelector('meta[property="og:description"]')
   if (ogDescription) ogDescription.setAttribute('content', description)
 
+  // Update Canonical URL
+  let canonical = document.querySelector('link[rel="canonical"]')
+  if (!canonical) {
+    canonical = document.createElement('link')
+    canonical.setAttribute('rel', 'canonical')
+    document.head.appendChild(canonical)
+  }
+  const baseUrl = 'https://techartisanci.online'
+  const path = to.path === '/' ? '' : to.path
+  canonical.setAttribute('href', `${baseUrl}${path}`)
+
   next()
 })
 
