@@ -1,4 +1,4 @@
-import { createRouter, createWebHashHistory } from 'vue-router'
+import { createRouter, createWebHistory } from 'vue-router'
 import HomeView from '../views/HomeView.vue'
 import ServicesView from '../views/ServicesView.vue'
 import ProductsView from '../views/ProductsView.vue'
@@ -20,8 +20,8 @@ const routes = [
     name: 'home',
     component: HomeView,
     meta: {
-      title: 'TechArtisan - Services Informatiques & Développement Web',
-      description: 'Expertise en comptabilité-gestion, design, maintenance informatique et développement web/mobile en Côte d\'Ivoire.'
+      title: 'TechArtisan - Expert Informatique & Développement Web en Côte d\'Ivoire',
+      description: 'TechArtisan : Solutions de développement web, maintenance informatique, comptabilité et design en Côte d\'Ivoire. Boostez votre entreprise avec nos experts.'
     }
   },
   {
@@ -29,8 +29,8 @@ const routes = [
     name: 'products',
     component: ProductsView,
     meta: {
-      title: 'Nos Produits & Logiciels - TechArtisan',
-      description: 'Découvrez nos solutions logicielles sur mesure pour optimiser votre gestion d\'entreprise.'
+      title: 'Logiciels & Produits sur Mesure - TechArtisan',
+      description: 'Découvrez nos solutions logicielles innovantes : gestion de stock, CRM et outils personnalisés pour optimiser votre productivité.'
     }
   },
   {
@@ -128,14 +128,14 @@ const routes = [
     name: 'stockproci',
     component: StockProCIView,
     meta: {
-      title: 'StockPro CI - Logiciel de Gestion de Stock',
-      description: 'La solution complète pour la gestion de vos stocks, ventes et inventaires en temps réel.'
+      title: 'StockPro CI - Logiciel de Gestion de Stock & Ventes n°1',
+      description: 'Gérez vos stocks, ventes et reçus WhatsApp en temps réel avec StockPro CI. La solution idéale pour les commerces en Côte d\'Ivoire.'
     }
   },
 ];
 
 const router = createRouter({
-  history: createWebHashHistory(),
+  history: createWebHistory(),
   routes,
   scrollBehavior(to, from, savedPosition) {
     if (savedPosition) {

@@ -132,7 +132,7 @@
             <!-- Service Principal 1: Informatique -->
             <div class="service-card primary">
               <div class="service-icon">
-                <img src="@/assets/developpement.jpg" alt="Développement Informatique" />
+                <img src="@/assets/developpement.jpg" alt="Services de développement informatique et création d'applications web TechArtisan" />
               </div>
               <div class="service-content">
                 <h3>Informatique & Développement</h3>
@@ -152,7 +152,7 @@
             <!-- Service Principal 2: Électronique -->
             <div class="service-card primary">
               <div class="service-icon">
-                <img src="@/assets/maintenance.jpg" alt="Électronique & Maintenance" />
+                <img src="@/assets/maintenance.jpg" alt="Maintenance électronique et réparation d'ordinateurs à Abidjan par TechArtisan" />
               </div>
               <div class="service-content">
                 <h3>Électronique & Maintenance</h3>
@@ -192,7 +192,7 @@
             <!-- Service Secondaire: Comptabilité -->
             <div class="service-card secondary">
               <div class="service-icon">
-                <img src="@/assets/comptabilite.jpg" alt="Comptabilité & Gestion" />
+                <img src="@/assets/comptabilite.jpg" alt="Expertise en comptabilité et gestion d'entreprise Côte d'Ivoire" />
               </div>
               <div class="service-content">
                 <h3>Comptabilité & Gestion</h3>
